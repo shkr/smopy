@@ -1,11 +1,13 @@
 Smopy
 =====
 
-Give a box in geographical coordinates (latitude/longitude) and a zoom level, Smopy returns an OpenStreetMap tile image!
+[ Fork contains additional variable which can be assigned a custom tile url server ]
+
+Give a box in geographical coordinates (latitude/longitude), tileserver (baseurl) [optional] and a zoom level, Smopy returns an OpenStreetMap tile image!
 
 ```python
 import smopy
-map = smopy.Map((42., -1., 55., 3.), z=4)
+map = smopy.Map((42., -1., 55., 3.), z=4, baseurl = 'https://tile.openstreemap.org')
 map.show_ipython()
 ```
 ![Europe map](examples/europe.png)
